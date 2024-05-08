@@ -108,9 +108,9 @@ function App() {
   console.log("rendering App component");
 
   return (
-    <div className="bg-cyan-200 w-full p-10">
-      <span className="text-4xl pb-8"> Score: {score}</span>
-      <div className="grid grid-cols-4 gap-6 pt-6">
+    <div className="bg-cyan-200 w-full p-10 relative h-full">
+      <span className="text-4xl pb-8 sticky"> Score: {score}</span>
+      <div className="grid md:grid-cols-4 gap-6 pt-6">
         {loading ? (
           <h1>Loading...</h1>
         ) : (
